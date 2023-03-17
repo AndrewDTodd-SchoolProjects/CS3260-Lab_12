@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DiskFileLineCounterMAUI.Services.LineCounterService">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\LineCounterService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiskFileLineCounterMAUI.ViewModels.BaseViewModel">
+    <Position X="4.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAQAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiskFileLineCounterMAUI.ViewModels.MainPageViewModel">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAQAAAAAAAAACAAAAAIAAAAAIAA=</HashCode>
+      <FileName>ViewModels\MainPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

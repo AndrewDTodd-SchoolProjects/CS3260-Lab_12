@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:DiskFileLineCounterMAUI.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel"
+             x:Class="DiskFileLineCounterMAUI.Views.MainPage"
+             Title="{Binding Title}">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="10"
+            VerticalOptions="Start"
+            HorizontalOptions="Start">
+
+            <HorizontalStackLayout
+                Spacing="10">
+                <Label Text="Running count of Lines Read:"></Label>
+                <Label Text="{Binding ActiveLineCount}"></Label>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="10">
+                <Label Text="Text File Location"></Label>
+                <Entry Placeholder="Enter file's location" 
+                       Text="{Binding TextFileLocation}"
+                       WidthRequest="400"></Entry>
+                <Button Text="Browse"
+                        Command="{Binding BrowseFilesCommand}"></Button>
+            </HorizontalStackLayout>
+
+            <Button Text="Get Line Count"
+                    Command="{Binding GetLineCountCommand}" 
+                    WidthRequest="200" 
+                    HorizontalOptions="Start"></Button>
+
+            <HorizontalStackLayout
+                Spacing="10">
+                <Label Text="Total Line Count:"></Label>
+                <Label Text="{Binding TotalCount}"></Label>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
